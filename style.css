@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Nova Square', sans-serif;
+}
+.upperSpacer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+}
+.AnimateSection{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.animate{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    overflow: hidden;
+    z-index: 2;
+}
+.animate h1{
+    font-size: 15vw;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+.revealUpSection{
+    top: 0px;
+}
+.revealUpSection h1{
+    top: 100%;
+}
+.revealDownSection h1{
+    top: 0px;
+}
+.revealDownSection{
+    bottom: 0px;
+}
+.backgroundSection{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.backgroundSection .innerText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+}
+.backgroundSection .innerText h2{
+    font-size: 5vw;
+}
+.backgroundSection .innerText p{
+    font-size: 2vw;
+    max-width: 600px;
+    text-align: center;
+}
